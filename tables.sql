@@ -54,10 +54,10 @@ CREATE TABLE systemadministator(
     Apassword varchar(100) NOT NULL
 );
 CREATE TABLE report(
-    reprtID int(11) PRIMARY KEY AUTO_INCREMENT,
+    reportID int(11) PRIMARY KEY AUTO_INCREMENT,
     reportType VARCHAR(50) NOT NULL,
     generatedDate DATE NOT NULL,
-    content TEXT NOT NULL,
+    reportcontent TEXT NOT NULL,
     adminID int(11) NOT NULL,
     Foreign Key (adminID) REFERENCES systemadministator(adminID)
 );
