@@ -4,7 +4,7 @@ create table location(
     locationID int(11) primary key auto_increment,
     Lnames varchar(100) not null,
     Lcity varchar(100) not null,
-    Lstate/county VARCHAR(100) not null,
+    Lstateorcounty VARCHAR(100) not null,
     Lcountry varchar(100) not null
 );
 CREATE Table customer(
